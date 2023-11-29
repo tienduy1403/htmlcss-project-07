@@ -559,9 +559,10 @@ a {
 }
 
 .feature__inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    column-gap: 130px;
+    gap: 160px 0;
 }
 
 /* feature info */
@@ -605,12 +606,14 @@ a {
 }
 
 /* Feature Media */
-.feature__media {
+.feature__media-top {
     position: relative;
-    width: 48.72%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .banking-card__feature {
+    margin-right: 88px;
     font-size: 1.93rem;
 }
 
@@ -696,4 +699,97 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: normal;
+}
+
+/* Feature 2 */
+.feature__media-bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 470px;
+    border-radius: 7px;
+}
+
+.feature__media-bgr {
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.feature__media-bgr::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    display: inline-block;
+    width: 100%;
+    height: 432px;
+    background: #92c2c2;
+    border-radius: inherit;
+    transform: skew(0deg, -8deg);
+}
+
+.feature__media-img {
+    position: relative;
+    z-index: 1;
+    width: 87.9%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature__decor {
+    position: absolute;
+    top: 288px;
+    right: -100px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.feature__box {
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    z-index: 2;
+    padding: 28px;
+    width: 281px;
+    height: 220px;
+    background: #fff;
+    border-radius: 9px;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.faeture__box-name {
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature__box-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 18px;
+}
+
+.feature__box-item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+/* Feature Info 2 */
+.feature__infor-bottom {
+    margin-left: auto;
 }
