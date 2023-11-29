@@ -150,16 +150,18 @@ a {
     margin: auto 0;
 }
 
+.feedback__subheading,
 .feature__sub-heading,
 .works__sub-heading,
 .hero__sub-heading {
     display: flex;
     align-items: center;
     column-gap: 12px;
-    color: #696d77;
+    color: var(--description-color);
     line-height: 1.75;
 }
 
+.feedback__subheading::before,
 .feature__sub-heading::before,
 .works__sub-heading::before,
 .hero__sub-heading::before {
@@ -779,7 +781,6 @@ a {
 }
 
 .feature__box-item {
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -789,7 +790,112 @@ a {
     background: #f2f2fa;
 }
 
+.feature__box-item:last-child {
+    background: #f9ea63;
+}
+
 /* Feature Info 2 */
 .feature__infor-bottom {
     margin-left: auto;
+}
+
+/* --------------------- Feedback ------------------ */
+.feedback {
+    padding: 160px 0 0;
+}
+
+/* Feedback Top */
+.feedback__subheading {
+    justify-content: center;
+}
+
+.feedback__heading {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.feedback__desc {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    max-width: 435px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Feedback Body */
+.feedback__body {
+    margin-top: 70px;
+}
+
+.feedback__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.feedback__item {
+    width: 50%;
+}
+
+.feedback__talk {
+    position: relative;
+    padding: 42px 28px;
+    max-width: 570px;
+    height: 314px;
+    background: #fff;
+    border-radius: 8px;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__talk::after {
+    content: "";
+    position: absolute;
+    top: 272px;
+    left: 50%;
+    translate: -50% 0;
+    display: block;
+    width: 84.85px;
+    height: 84.85px;
+    background: #fff;
+    rotate: -45deg;
+}
+
+.feedback__talk-paragraph {
+    color: var(--description-color);
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+.feedback__avt {
+    margin: 96px auto 0;
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    background: #4ab5e4;
+}
+
+.feedback__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.feedback__name {
+    margin-top: 20px;
+    color: #070052;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.feecback__job {
+    margin-top: 2px;
+    color: var(--description-color);
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
