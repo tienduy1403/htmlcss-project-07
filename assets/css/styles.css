@@ -40,7 +40,7 @@ a {
 .btn {
     padding: 21px 12px;
     min-width: 113px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #212832;
     border: none;
     text-align: center;
@@ -51,6 +51,13 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.section-heading {
+    color: var(--heading-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 
 .section-desc {
@@ -119,6 +126,7 @@ a {
 
 .header__signup {
     padding: 18px 12px;
+    border-radius: 6px;
 }
 
 /* --------------------- Hero ------------------ */
@@ -134,8 +142,16 @@ a {
 .hero__inner {
     margin: auto 0;
     display: flex;
+    column-gap: 168px;
+    width: 100%;
 }
 /* Hero text */
+.hero__text {
+    margin: auto 0;
+}
+
+.feature__sub-heading,
+.works__sub-heading,
 .hero__sub-heading {
     display: flex;
     align-items: center;
@@ -144,6 +160,8 @@ a {
     line-height: 1.75;
 }
 
+.feature__sub-heading::before,
+.works__sub-heading::before,
 .hero__sub-heading::before {
     content: "";
     display: inline-block;
@@ -160,7 +178,7 @@ a {
     line-height: 1.17;
 }
 
-.hero__heading strong {
+.hero__heading b {
     color: #7264d6;
 }
 
@@ -174,7 +192,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 540px;
+    max-width: 540px;
     height: 74px;
     border-radius: 8px;
     background: #fff;
@@ -202,7 +220,6 @@ a {
 
 .hero__sumit {
     min-width: 149px;
-    border-radius: 8px;
     background: #7264d6;
 }
 
@@ -212,4 +229,471 @@ a {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71;
+}
+
+/* Hero Media */
+/* Mobile Banking */
+.hero__media {
+    width: 40.17%;
+    position: relative;
+}
+
+.mobile-banking {
+    width: 296px;
+    position: relative;
+}
+
+/* Mobile banking Camera Selfie */
+.mobile-banking__decor {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.mobile-banking__inner {
+    padding: 40px 11px 30px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+}
+
+/* Mobile banking Card */
+.banking-card {
+    font-size: 1rem;
+}
+
+.banking-card__body {
+    position: relative;
+    padding: 1.6em;
+    width: 250px;
+    height: 15em;
+    border-radius: 2em;
+    background: linear-gradient(76deg, #857ae4 11.52%, #7263d6 70.78%);
+    overflow: hidden;
+}
+
+/* Banking Decor */
+.banking-card__decor {
+    position: absolute;
+}
+
+.banking-card__decor--top {
+    top: 0;
+    left: 0;
+}
+
+.banking-card__decor--circle {
+    top: 1.6em;
+    right: 1.6em;
+}
+
+.banking-card__decor--bottom {
+    top: 5.4em;
+    right: -0.5em;
+}
+
+.banking-card__name {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banking-card__money {
+    position: relative;
+    z-index: 1;
+    margin-top: 0.2em;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banking-card__column {
+    position: relative;
+    z-index: 1;
+    margin-top: 3.2em;
+    display: flex;
+    column-gap: 1.2em;
+}
+
+.banking-card__desc {
+    color: #fff;
+    font-size: 1em;
+    line-height: normal;
+}
+
+.banking-card__value {
+    margin-top: 0.5em;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.mobile-banking__transections {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-banking__transections-name {
+    color: #31456a;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Banking Row */
+.mobile-banking__row {
+    margin-top: 28px;
+    display: flex;
+}
+
+.mobile-banking__row-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+}
+
+.mobile-banking__row-icon {
+    background: #edf8fd;
+}
+
+.mobile-banking__row-pink {
+    background: #fbefef;
+}
+
+.mobile-banking__row-green {
+    background: #ecf5f4;
+}
+
+.mobile-banking__row-violet {
+    background: #f1effb;
+}
+
+.mobile-banking__row-name {
+    margin-left: 14px;
+}
+
+.mobile-banking__row-money,
+.mobile-banking__row-type {
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.mobile-banking__row-date,
+.mobile-banking__row-desc {
+    margin-top: 6px;
+    color: var(--description-color);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.mobile-banking__row-value {
+    margin-left: auto;
+    text-align: right;
+}
+/* Hero Deposite */
+.hero__deposite {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__deposite-name {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__deposite-dolar {
+    margin-left: auto;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+/*  Hero Interset */
+.hero__interset {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.hero__interset-value {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero__interset-name {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* Hero Secur */
+.hero__secur {
+    position: absolute;
+    bottom: 64px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 68px;
+    background: #439f90;
+    border-radius: 10px;
+}
+
+.hero__secur-column {
+    margin-left: 11px;
+}
+
+.hero__secur-dolar {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__secur-name {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+/* --------------------- Works ------------------ */
+.works {
+    padding: 160px 0 0;
+    background: #fff;
+}
+
+.works__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 230px;
+}
+
+/* Works Media */
+.works__media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40.17%;
+}
+
+.works__media::after {
+    content: url(../img/works-media-background.svg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+}
+
+.works__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 97%;
+    object-fit: cover;
+}
+
+/* Works Content */
+.works__content {
+    width: 40.17%;
+}
+
+.works__heading {
+    margin-top: 12px;
+    padding-bottom: 40px;
+}
+
+.works__group {
+    margin-top: 30px;
+}
+
+.works__group-heading {
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.works__group-desc {
+    margin-top: 16px;
+    color: var(--description-color);
+    line-height: 1.75;
+}
+
+/* --------------------- Feature ------------------ */
+.feature {
+    padding: 160px 0 0;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+/* feature info */
+.feature__heading {
+    margin-top: 12px;
+    max-width: 470px;
+}
+
+.feature__desc {
+    margin-top: 20px;
+    max-width: 470px;
+}
+
+.feature__list {
+    margin-top: 28px;
+}
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 18px;
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature__item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.feature__btn {
+    margin-top: 38px;
+    display: inline-block;
+    min-width: 149px;
+}
+
+/* Feature Media */
+.feature__media {
+    position: relative;
+    width: 48.72%;
+}
+
+.banking-card__feature {
+    font-size: 1.93rem;
+}
+
+.banking-card__body-feature {
+    width: 482px;
+    height: 322px;
+}
+
+.banking-card__decor--bot {
+    top: 7.4em;
+}
+
+/* Feature Send Money */
+.feature__sendmoney {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    padding: 0 13px;
+    display: flex;
+    align-items: center;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__sendmoney-name {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feature__sendmoney-date,
+.feature__sendmoney-desc {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feature__sendmoney-money {
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Feature income */
+.feature__income {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.feature__income-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.feature__income-name {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.feature__income-value {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
 }
