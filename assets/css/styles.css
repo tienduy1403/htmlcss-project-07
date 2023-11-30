@@ -224,9 +224,11 @@ a {
     line-height: 1.75;
 }
 
-.hero__sumit {
+.hero__submit {
+    padding: 15px 12px;
     min-width: 149px;
     background: #7264d6;
+    line-height: 1.75;
 }
 
 .hero__noti {
@@ -886,6 +888,8 @@ a {
 }
 
 .feedback__talk-paragraph {
+    position: relative;
+    z-index: 2;
     color: var(--description-color);
     text-align: center;
     font-size: 2.2rem;
@@ -1116,4 +1120,137 @@ a {
 .download__decor--bottomright {
     bottom: 49px;
     right: 166px;
+}
+
+/* --------------------- Footer ------------------ */
+.footer {
+    position: relative;
+    margin: 100px 0 0;
+    padding: 100px 0 28px;
+    background: #fafbff;
+}
+
+.footer::before,
+.footer::after {
+    content: "";
+    position: absolute;
+}
+
+.footer::before {
+    top: 100%;
+    width: 100%;
+    height: 84px;
+    background: #7264d6;
+}
+
+.footer::after {
+    content: attr(copyright);
+    left: 50%;
+    top: 100%;
+    translate: -50% 28px;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__mailto {
+    display: block;
+    margin-top: 298px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-decoration-line: underline;
+}
+
+.footer__title {
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.footer__list {
+    margin-top: 24px;
+}
+
+.footer__link {
+    padding: 10px 0;
+    display: inline-block;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.footer__telto {
+    display: inline-block;
+    margin: 80px 0 0 -16px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-decoration-line: underline;
+}
+
+.footer__desc {
+    margin-top: 24px;
+    max-width: 371px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.footer__form {
+    margin-top: 48px;
+}
+
+.footer__form label {
+    margin-bottom: 24px;
+    display: block;
+    color: #0a142f;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.footer__group {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer__form input {
+    padding: 0 12px;
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    outline: none;
+}
+
+.footer__form input,
+.footer__form input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.footer__submit {
+    padding: 12px 12px;
+    border-radius: 6px;
+    background: #7264d6;
+    line-height: 1.75;
+}
+
+.footer__column:nth-child(2) {
+    margin-left: 9.91%;
+}
+
+.footer__column:nth-child(3) {
+    margin-left: 12.3%;
+}
+
+.footer__column:last-child {
+    margin-left: auto;
 }
