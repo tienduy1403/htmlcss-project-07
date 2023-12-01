@@ -85,6 +85,12 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Fonts CSS -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Styles CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
@@ -111,13 +117,17 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" class="header__link">Products</a>
+                                <a href="#products" class="header__link">
+                                    Products
+                                </a>
                             </li>
                             <li>
-                                <a href="#!" class="header__link">Features</a>
+                                <a href="#feature" class="header__link">
+                                    Features
+                                </a>
                             </li>
                             <li>
-                                <a href="#!" class="header__link">Blog</a>
+                                <a href="#blog" class="header__link"> Blog </a>
                             </li>
                         </ul>
                     </nav>
@@ -135,13 +145,26 @@
                     <div class="hero__inner">
                         <!-- Hero Text -->
                         <section class="hero__text">
-                            <p class="hero__sub-heading">
+                            <p
+                                class="hero__sub-heading"
+                                data-aos="fade-right"
+                                data-aos-duration="1000"
+                            >
                                 Digital Smart Wallet
                             </p>
-                            <h1 class="hero__heading">
+                            <h1
+                                class="hero__heading"
+                                data-aos="fade-right"
+                                data-aos-duration="1000"
+                            >
                                 Digital <b>Payment</b> For Everyone.
                             </h1>
-                            <p class="section-desc hero__desc">
+                            <p
+                                class="section-desc hero__desc"
+                                data-aos="fade-right"
+                                data-aos-duration="700"
+                                data-aos-delay="1000"
+                            >
                                 We bring together eveything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
@@ -152,6 +175,9 @@
                                 method="post"
                                 autocomplete="off"
                                 target="_blank"
+                                data-aos="flip-right"
+                                data-aos-duration="1000"
+                                data-aos-delay="1500"
                             >
                                 <input
                                     type="email"
@@ -165,7 +191,12 @@
                                     Get Started
                                 </button>
                             </form>
-                            <p class="hero__noti">
+                            <p
+                                class="hero__noti"
+                                data-aos="flip-right"
+                                data-aos-duration="1000"
+                                data-aos-delay="1500"
+                            >
                                 *We’ll respect the inbox and never share your
                                 email.
                             </p>
@@ -173,7 +204,13 @@
                         <!-- Hero Media -->
                         <div class="hero__media">
                             <!-- Mobile Banking -->
-                            <article class="mobile-banking">
+                            <article
+                                class="mobile-banking"
+                                class="hero__noti"
+                                data-aos="fade-left"
+                                data-aos-duration="1000"
+                                data-aos-delay="0"
+                            >
                                 <!-- Mobile banking Camera Selfie -->
                                 <img
                                     src="./assets/img/camera-selfie.svg"
@@ -413,7 +450,7 @@
                 </div>
             </section>
             <!------------ Works ------------>
-            <section class="works">
+            <section id="products" class="works">
                 <div class="container">
                     <div class="works__inner">
                         <!-- Works Media -->
@@ -470,7 +507,7 @@
                 </div>
             </section>
             <!------------ Feature ------------>
-            <section class="feature">
+            <section id="feature" class="feature">
                 <div class="container">
                     <div class="feature__inner">
                         <!-- Feature Info 1 -->
@@ -855,7 +892,7 @@
                 </div>
             </section>
             <!------------ Blog ------------>
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <!-- Blog Top -->
                     <section class="blog__top">
@@ -1040,10 +1077,18 @@
                         special online bank and move faster
                     </p>
                     <div class="download__cta">
-                        <a href="#!" class="btn download__btn"
+                        <a
+                            href="#!"
+                            class="btn download__btn"
+                            data-aos="zoom-in"
+                            data-aos-delay="250"
                             ><img src="./assets/img/chplay.svg" alt=""
                         /></a>
-                        <a href="#!" class="btn download__btn"
+                        <a
+                            href="#!"
+                            class="btn download__btn"
+                            data-aos="zoom-in"
+                            data-aos-delay="250"
                             ><img src="./assets/img/appstore.svg" alt=""
                         /></a>
                     </div>
@@ -1160,5 +1205,10 @@
                 </div>
             </div>
         </footer>
+        <!-- Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
