@@ -517,14 +517,20 @@ a {
     display: flex;
     justify-content: center;
     width: 40.17%;
+    object-fit: contain;
 }
 
 .works__media::after {
-    content: url(../img/works-media-background.svg);
+    content: "";
+    flex-shrink: 1;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2px;
+    bottom: 0px;
+    background-image: url(../img/works-media-background.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 88%;
 }
 
 .works__img {
