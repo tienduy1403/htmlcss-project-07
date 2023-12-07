@@ -93,17 +93,43 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Resonsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <!------------ Header + navbar ------------>
         <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <!-- Toggle-menu -->
+                    <label for="toggle-menu" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="16"
+                            viewBox="0 0 18 16"
+                            fill="none"
+                        >
+                            <rect width="18" height="2" fill="currentColor" />
+                            <rect
+                                y="7"
+                                width="18"
+                                height="2"
+                                fill="currentColor"
+                            />
+                            <rect
+                                y="14"
+                                width="18"
+                                height="2"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </label>
                     <a href="#">
                         <img
                             src="./assets/img/logo-online-banking 1.svg"
                             alt=""
-                            class="header__logo"
+                            class="header__logo header__logo-mobile"
                         />
                     </a>
                     <nav class="header__navbar">
@@ -136,6 +162,47 @@
                         <a href="#!" class="btn header__signup">Sign up</a>
                     </div>
                 </div>
+            </div>
+        </header>
+        <!------------ Header Mobile + Tablet ------------>
+        <header class="header-mobile">
+            <input type="checkbox" name="toggle-menu" id="toggle-menu" hidden />
+            <!-- Overlay -->
+            <label for="toggle-menu" class="menu-overlay"></label>
+            <!-- Drawer Menu -->
+            <div class="drawer-menu">
+                <!-- Logo -->
+                <a href="#">
+                    <img
+                        src="./assets/img/logo-online-banking 1.svg"
+                        alt=""
+                        class="header-mobile__logo"
+                    />
+                </a>
+                <!-- Navigation -->
+                <nav class="header-mobile__navbar">
+                    <ul class="header-mobile__navigation">
+                        <li>
+                            <a href="#" class="header__link"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#products" class="header__link">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#feature" class="header__link">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="header__link"> Blog </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-mobile__seperate only-mobile"></div>
+                <a href="#!" class="header__link only-mobile"> Log in </a>
+                <a href="#!" class="header__link only-mobile"> Sign up </a>
             </div>
         </header>
         <main>
@@ -413,54 +480,56 @@
                                         </div>
                                     </div>
                                 </div>
-                            </article>
-                            <!-- Hero Deposite  -->
-                            <div
-                                class="hero__deposite"
-                                data-aos="fade-right"
-                                data-aos-duration="1000"
-                                data-aos-delay="500"
-                            >
-                                <img
-                                    src="./assets/img/deposite.svg"
-                                    alt=""
-                                    class="hero__deposite-img"
-                                />
-                                <p class="hero__deposite-name">Deposite</p>
-                                <span class="hero__deposite-dolar">$32000</span>
-                            </div>
-                            <!-- Hero Interset -->
-                            <div
-                                class="hero__interset"
-                                data-aos="fade-down"
-                                data-aos-duration="1000"
-                                data-aos-delay="1000"
-                            >
-                                <span class="hero__interset-value">0%</span>
-                                <p class="hero__interset-name">Interest</p>
-                            </div>
-                            <!-- Hero Secur -->
-                            <div
-                                class="hero__secur"
-                                class="hero__interset"
-                                data-aos="flip-right"
-                                data-aos-duration="1000"
-                                data-aos-delay="1500"
-                            >
-                                <img
-                                    src="./assets/img/Secur.svg"
-                                    alt=""
-                                    class="hero__secur-img"
-                                />
-                                <div class="hero__secur-column">
-                                    <span class="hero__secur-dolar"
-                                        >$1.310</span
+                                <!-- Hero Deposite  -->
+                                <div
+                                    class="hero__deposite"
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="500"
+                                >
+                                    <img
+                                        src="./assets/img/deposite.svg"
+                                        alt=""
+                                        class="hero__deposite-img"
+                                    />
+                                    <p class="hero__deposite-name">Deposite</p>
+                                    <span class="hero__deposite-dolar"
+                                        >$32000</span
                                     >
-                                    <p class="hero__secur-name">
-                                        SECURED FUNDS
-                                    </p>
                                 </div>
-                            </div>
+                                <!-- Hero Interset -->
+                                <div
+                                    class="hero__interset"
+                                    data-aos="fade-down"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="1000"
+                                >
+                                    <span class="hero__interset-value">0%</span>
+                                    <p class="hero__interset-name">Interest</p>
+                                </div>
+                                <!-- Hero Secur -->
+                                <div
+                                    class="hero__secur"
+                                    class="hero__interset"
+                                    data-aos="flip-right"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="1500"
+                                >
+                                    <img
+                                        src="./assets/img/Secur.svg"
+                                        alt=""
+                                        class="hero__secur-img"
+                                    />
+                                    <div class="hero__secur-column">
+                                        <span class="hero__secur-dolar"
+                                            >$1.310</span
+                                        >
+                                        <p class="hero__secur-name">
+                                            SECURED FUNDS
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -623,67 +692,69 @@
                                         </div>
                                     </div>
                                 </div>
-                            </article>
-                            <!-- Feature Send Money -->
-                            <div
-                                class="feature__sendmoney"
-                                data-aos="fade-down"
-                                data-aos-duration="1000"
-                                data-aos-delay="500"
-                            >
+                                <!-- Feature Send Money -->
                                 <div
-                                    class="mobile-banking__row-icon mobile-banking__row-pink"
+                                    class="feature__sendmoney"
+                                    data-aos="fade-down"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="500"
                                 >
-                                    <img
-                                        src="./assets/img/banking-icon-02.svg"
-                                        alt=""
-                                        class="mobile-banking__row-img"
-                                    />
-                                </div>
+                                    <div
+                                        class="mobile-banking__row-icon mobile-banking__row-pink"
+                                    >
+                                        <img
+                                            src="./assets/img/banking-icon-02.svg"
+                                            alt=""
+                                            class="mobile-banking__row-img"
+                                        />
+                                    </div>
 
-                                <div class="mobile-banking__row-name">
-                                    <p
-                                        class="mobile-banking__row-type feature__sendmoney-name"
-                                    >
-                                        Send Money
-                                    </p>
-                                    <p
-                                        class="mobile-banking__row-desc feature__sendmoney-desc"
-                                    >
-                                        Airbnb Payment
-                                    </p>
-                                </div>
+                                    <div class="mobile-banking__row-name">
+                                        <p
+                                            class="mobile-banking__row-type feature__sendmoney-name"
+                                        >
+                                            Send Money
+                                        </p>
+                                        <p
+                                            class="mobile-banking__row-desc feature__sendmoney-desc"
+                                        >
+                                            Airbnb Payment
+                                        </p>
+                                    </div>
 
-                                <div class="mobile-banking__row-value">
-                                    <p
-                                        class="mobile-banking__row-money feature__sendmoney-money"
-                                    >
-                                        - $600
-                                    </p>
-                                    <p
-                                        class="mobile-banking__row-date .feature__sendmoney-date"
-                                    >
-                                        Sep 23
-                                    </p>
+                                    <div class="mobile-banking__row-value">
+                                        <p
+                                            class="mobile-banking__row-money feature__sendmoney-money"
+                                        >
+                                            - $600
+                                        </p>
+                                        <p
+                                            class="mobile-banking__row-date .feature__sendmoney-date"
+                                        >
+                                            Sep 23
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Feature income -->
-                            <div
-                                class="feature__income"
-                                data-aos="flip-down"
-                                data-aos-duration="1000"
-                                data-aos-delay="1000"
-                            >
-                                <div class="feature__income-icon">
-                                    <img
-                                        src="./assets/img/banking-icon-03.svg"
-                                        alt=""
-                                        class="feature__income-img"
-                                    />
+                                <!-- Feature income -->
+                                <div
+                                    class="feature__income"
+                                    data-aos="flip-down"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="1000"
+                                >
+                                    <div class="feature__income-icon">
+                                        <img
+                                            src="./assets/img/banking-icon-03.svg"
+                                            alt=""
+                                            class="feature__income-img"
+                                        />
+                                    </div>
+                                    <p class="feature__income-name">Income</p>
+                                    <span class="feature__income-value"
+                                        >$1250</span
+                                    >
                                 </div>
-                                <p class="feature__income-name">Income</p>
-                                <span class="feature__income-value">$1250</span>
-                            </div>
+                            </article>
                         </div>
                         <!-- Feature Media 2 -->
                         <figure
@@ -1176,6 +1247,9 @@
                             </article>
                         </div>
                     </div>
+                    <a href="#!" class="btn blog__btn-mobile only-mobile">
+                        Read All
+                    </a>
                 </div>
             </section>
             <!------------ Download ------------>
